@@ -1,0 +1,179 @@
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contanier{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #fdbe26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contanier .box{
+    height: 86vh;
+    width: 75%;
+    padding:0 20px;
+    z-index: 10;
+    border:2px solid rgba(255,255,255,0.7);
+    border-radius: 20px ;
+    display: flex;
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10,10,10,0.15);
+}
+
+.contanier::after{
+    content:'';
+    position:absolute;
+    height: 300px;
+    width:300px;
+    transform: translate(400px,150px);
+    border-radius:50%;
+
+}
+.contanier .box nav{
+    height:7%;
+    width:95%;
+    position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.contanier .box nav ul li {
+    display: inline-block;
+    padding:0 20px;
+}
+
+.contanier .box nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #242329;
+    transition: 0.4s;
+}
+.contanier .box nav ul li a:hover{
+    color:#7c8bd1;
+}
+
+nav .logo{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 30px;
+    padding: 5px 10px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none; 
+
+} 
+
+.contanier .box .contains{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+    padding-left: 80px;
+}
+
+.contanier .box .contains .section-1{
+    position: relative;
+    width:40%;
+}
+.contains .section-1 h2{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color:#ee1f26;
+}
+
+.contains .section-1 h4 {
+    font-size: 24px;
+    color: #ee1f26;
+    margin-bottom: 10px;
+
+}
+
+.contains .section-1 p{
+    font-size: 18px;
+    color: #505052;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+.contains .section-1 .btn{
+    padding: 15px 20px;
+    background-color: black;
+    border: 1px solid black;
+    color: #fff;
+    border-radius: 5px;
+    /* font-weight: 500;*/ font-weight: bold; 
+    text-decoration: none;
+    transition:0.3s;
+}
+
+.contains .section-1 .btn:hover{
+    background-color: #ee1f26;
+    color:#fff;
+}
+
+.contains .section-2{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.contains .section-2 img{
+    width: 100%;
+}
+
+.contains .section-3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 10px;
+    top: 45%; /*30*/
+}
+
+.contains .section-3 a i{
+    font-size: 25px;
+    /* color: #7c8bd1; */
+    color:#535355;
+    transition: 0.3s;
+}
+
+.contains .section-3 a i:hover{
+    /* color:#6f34fe */
+    color:#242329
+}
+
+/* kdjjdjddj*/
+
+   @media only screen and (max-width: 390px) {   /*this line is for mobile view  */
+
+    /* html,body{        /*this code is for removing extra white corner space or overflow 
+        width: 100%;
+        height: 100%;
+        margin:0;
+        padding: 0;
+        overflow-x: hidden;
+    }   */
+
+
+}
+
+
+
+      
+
